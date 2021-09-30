@@ -6,7 +6,7 @@ html, body, #home {
 }
 
 body {
-    background: url(../../imagens/pngwing.com\ \(1\).png),
+    background: url(../../imagens/pngwing.com1.png),
                 url(../../imagens/ruido.png),  
                 linear-gradient(50deg, #1d4ed3, #a0b87f);     
     background-attachment: fixed;       
@@ -100,9 +100,17 @@ body {
     text-align: center;
 }
 
+#carousel-portfolio h1{
+    color: chartreuse;
+}
+
 #servicos {
-    background-color: #000;
+  
+    color: black;
     padding: 20px 0px 20px 0px;
+    border: 3px solid black;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.801);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.801);
 }
 
 #servicos h2, h3 {
