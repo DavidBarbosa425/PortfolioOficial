@@ -252,6 +252,12 @@ h3 {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    #home h2 {
+        font-size: 1.5em;
+        margin-left: 100px;
+
+    }
+    
     h1 {
         font-size: 3em;
     }
