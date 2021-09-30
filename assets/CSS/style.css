@@ -218,10 +218,7 @@ h3 {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
-    footer {
-        padding: 0px;
-        text-align: center;    
-    }
+
      
     #recursos {
         text-align: center;
@@ -241,6 +238,11 @@ h3 {
         margin: 10px 15px;
     }
 
+    footer {
+        padding: 0px;
+        text-align: center;    
+    }
+
     footer h4 {
         margin-top: 40px;
     }
@@ -258,12 +260,29 @@ h3 {
 
     }
 
+    #recursos {
+        text-align: center;
+    }
+
     h1 {
         font-size: 3em;
     }
 
     .btn-custom {
         margin: 10px 15px;
+    }
+
+    footer {
+        padding: 40px;
+        text-align: center;    
+    }
+
+    footer h4 {
+        margin-top: 40px;
+    }
+
+    footer ul li {
+        margin: 5px;
     }
  }
 
@@ -274,8 +293,26 @@ h3 {
         margin-left: 100px;
 
     }
+
+    #recursos {
+        text-align: center;
+    }
+    
     h1 {
         font-size: 4em;
+    }
+
+    footer {
+        padding: 0px;
+        text-align: center;    
+    }
+
+    footer h4 {
+        margin-top: 40px;
+    }
+
+    footer ul li {
+        margin: 5px;
     }
  }
 
@@ -283,6 +320,10 @@ h3 {
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     #home h2 {
         margin-left: 200px;
+    }
+
+    #recursos {
+        text-align: center;
     }
 
     h1 {
