@@ -314,6 +314,10 @@ h3 {
     footer ul li {
         margin: 5px;
     }
+
+    .pcfooter {
+        margin-top: 40px;
+    }
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -325,6 +329,8 @@ h3 {
     h1 {
         font-size: 5em;
     }
+
+
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
