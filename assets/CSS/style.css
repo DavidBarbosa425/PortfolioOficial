@@ -105,7 +105,7 @@ body {
 }
 
 #servicos {
-  
+    background-color: rgba(0, 0, 0, 0.897);
     color: black;
     padding: 20px 0px 20px 0px;
     border: 3px solid black;
@@ -118,14 +118,14 @@ body {
 }
 
 #sobre { 
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.514);
     padding: 20px 0px 20px 0px;
     color: #000;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.801);
 }
 
 #sobre h2 {
-    color: #9bf0e1;
+    color: #88ff00;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.795);
 }
 
@@ -139,11 +139,12 @@ body {
 }
 
 #recursos h2 {
-    color: #9bf0e1;
+    color: #88ff00;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.87);
 }
 
 #recursos h3 {
-    color: #fff;
+    color: #000;
 }
 
 .rotacionar {
@@ -152,6 +153,12 @@ body {
     -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
     padding-left: 80px;
 }
+
+.formacao {
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 15px;
+}
+
 
 /* Rodapé----------------------*/
 
