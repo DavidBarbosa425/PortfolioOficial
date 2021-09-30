@@ -219,10 +219,8 @@ h3 {
 @media (max-width: 575.98px) { 
 
     footer {
-        background-color: black;
         padding: 0px;
-        text-align: center;
-        
+        text-align: center;    
     }
      
     #recursos {
