@@ -217,6 +217,28 @@ h3 {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+
+    footer {
+        background-color: black;
+        padding: 0px;
+        text-align: center;
+        
+    }
+     
+    #recursos {
+        text-align: center;
+    }
+
+    .border {
+        border: 0px solid #0661bd!important;
+    }
+
+    #home h2 {
+        font-size: 1.5em;
+        margin-left: 100px;
+
+    }
+
     .btn-custom {
         margin: 10px 15px;
     }
@@ -250,6 +272,10 @@ h3 {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+    #home h2 {
+        margin-left: 200px;
+    }
+
     h1 {
         font-size: 5em;
     }
