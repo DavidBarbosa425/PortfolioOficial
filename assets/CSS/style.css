@@ -93,7 +93,7 @@ body {
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.795);
     color: rgb(171, 255, 15);
     text-align: justify;
-    margin-left: 260px;
+    margin-left: 250px;
 }
 
 #carousel-portfolio {
@@ -257,7 +257,7 @@ h3 {
         margin-left: 100px;
 
     }
-    
+
     h1 {
         font-size: 3em;
     }
