@@ -56,13 +56,44 @@ input {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
+    .form {
+        width: 160px;
+        height: 100%; 
+    }
 
+    input {
+        width: 140px;
+        height: 30px;
+        margin: 8px
+    }
+
+    .submit {
+        width: 140px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
     
  }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    
+    input {
+        width: 360px;
+        height: 30px;
+        margin: 8px
+    }
+
+    .submit {
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
     
  }
 
