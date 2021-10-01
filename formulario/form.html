@@ -5,28 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="assetsForm/css/style.css">
+    
 </head>
 <body>
-    <h1>Realize o Cadastro para Efetuar Login.</h1>
+   
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="assetsForm/css/style.css">
+
+    <title>Formulário</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+
+                <h1 class="text-danger">Realize o Cadastro para Efetuar Login.</h1>
     
-    <form action=""  class="form">
-        <label for="">Nome</label>
+    <form action=""  class="form m-auto">
+        <label class="ml-2" for="">Nome</label>
         <input type="text" class="name valid">
-        <label for="">Sobrenome</label>
+        <label class="ml-2" for="">Sobrenome</label>
         <input type="text" class="surname valid">
-        <label for="">CPF</label>
+        <label class="ml-2" for="">CPF</label>
         <input type="text" class="cpf valid">
-        <label for="">Usuário</label>
+        <label class="ml-2" for="">Usuário</label>
         <input type="text" class="user valid">
-        <label for="">Senha</label>
-        <input type="password" class="password valid">
-        <label for="">Repetir Senha</label>
+        <label class="ml-2" for="">Senha</label>
+        <input  type="password" class="password valid">
+        <label class="ml-2" for="">Repetir Senha</label>
         <input type="password" class="repeatPassword valid">
-        <button class="submit">Enviar</button>
+        <button class="submit mb-3">ENVIAR</button>
     </form>
 
+            </div>
+        </div>
+    </div>
+
+    <footer class=" text-success mt-5">
+        <h1>Realize o Cadastro para Efetuar Login.</h1>
+    </footer>
+    
     <script src="assetsForm/js/validatorCPF.js"></script>
     <script src="assetsForm/js/form.js"></script>
-</body>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
