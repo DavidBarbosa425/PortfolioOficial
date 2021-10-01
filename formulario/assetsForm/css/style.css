@@ -51,24 +51,25 @@ input {
     color: red;
     font-size: 12px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
     .form {
-        width: 160px;
+        width: 195px;
         height: 100%; 
     }
 
     input {
-        width: 140px;
+        width: 175px;
         height: 30px;
         margin: 8px
     }
 
     .submit {
-        width: 140px;
+        width: 175px;
     }
 
     h1 {
