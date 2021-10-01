@@ -1,40 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     background-image: linear-gradient(45deg, black, rgb(172, 5, 5));
     height: 100vh;
 }
 
-.container {
-    width: 480px;
-    height: 150px;
-    margin: 100px auto 10px auto;
-    background-color: #698B69;
+.timer {
     border-radius: 15px;
     border: 5px solid black;
-}
-
-.timer {
+    background-color: #698B69;
     text-align: center;
     font-size: 7em;
-    padding: 10px;
+
     
 }
 
-.containerBtns {
-margin: 10px;
-text-align: center;
-
-}
-
 button {
+    width: 140px;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: black;
     color: brown;
-    margin: 0px 20px 0px 20px;
-    padding: 5px 35px;
     border-radius: 15px;
 }
 
@@ -46,6 +31,86 @@ button:hover {
 .red {
     color: red;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .timer {
+        font-size: 3em; 
+  
+    }
+
+    button {
+        width: 45px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 7px;
+    }
+   
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .timer {
+        font-size: 7em;
+    
+        
+    }
+    button {
+        width: 140px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+   
+
+  
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .timer {
+        font-size: 8em;
+    }
+
+    button {
+        width: 160px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+   
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .timer {
+        font-size: 9em;
+    }
+    button {
+        width: 180px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .timer {
+        font-size: 10em;
+    }
+    button {
+        width: 220px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+ }
 
 
 
