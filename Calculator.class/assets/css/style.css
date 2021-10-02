@@ -53,3 +53,7 @@ button:hover {
     color: white;
     border: 1px solid white;
 }
+
+footer {
+    text-align: center;
+}
