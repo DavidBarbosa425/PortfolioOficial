@@ -32,41 +32,37 @@
   </head>
   <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 m-auto ">
+    <div class="row">
+      <div class="col-3 m-auto">
+        <h4 class=" mt-5 mb-5 text-center text-white bg-primary p-1 rounded">Tela de Cadastro</h4>
 
-                <h1 class="text-primary">Realize o Cadastro para Efetuar Login.</h1>
-    
-    <form action=""  class="form m-auto ">
-        <label class="ml-2" for="">Nome</label>
-        <input type="text" class="name valid">
-        <label class="ml-2" for="">Sobrenome</label>
-        <input type="text" class="surname valid">
-        <label class="ml-2" for="">CPF</label>
-        <input type="text" class="cpf valid">
-        <label class="ml-2" for="">Usuário</label>
-        <input type="text" class="user valid">
-        <label class="ml-2" for="">Senha</label>
-        <input  type="password" class="password valid">
-        <label class="ml-2" for="">Repetir Senha</label>
-        <input type="password" class="repeatPassword valid">
-        <button class="submit mb-3">ENVIAR</button>
-    </form>
+        <form action=""  class="form m-auto rounded">
+            <label class="" for="">Nome</label>
+            <input type="text" class="name valid form-control">
+            <label class="" for="">Sobrenome</label>
+            <input type="text" class="surname valid form-control">
+            <label class="" for="">CPF</label>
+            <input type="number" class="cpf valid form-control">
+            <label class="" for="">Usuário</label>
+            <input type="text" class="user valid form-control">
+            <label class="" for="">Senha</label>
+            <input  type="password" class="password valid form-control">
+            <label class="" for="">Repetir Senha</label>
+            <input type="password" class="repeatPassword valid form-control">
+            <button class="submit btn btn-primary form-control mt-4">Cadastrar</button>
+        </form>
 
-            </div>
-        </div>
+      </div>
     </div>
 
-    <footer class=" text-primary mt-5">
-        <h1> 
-          Código no GitHub
-        </h1>
-        <div class="text-center mb-3">
+
+    <footer class=" text-primary m-auto text-center">
+          <h4 class="mt-5"> 
+            Código no GitHub
+          </h4>
           <a href="https://github.com/DavidBarbosa425/PortfolioOficial/tree/main/formulario" target="blank">
-            <i class="fab fa-github fa-4x text-success"></i>
+            <i class="fab fa-github fa-4x"></i>
           </a>
-        </div>
     </footer>
     
     <script src="assetsForm/js/validatorCPF.js"></script>
