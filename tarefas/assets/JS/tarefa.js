@@ -44,6 +44,8 @@ class Tasks {
         btnDelete.classList.add('delete');
         btnDelete.classList.add('mt-2');
         btnDelete.classList.add('mb-2');
+        btnDelete.classList.add('btn');
+        btnDelete.classList.add('btn-primary');
         btnDelete.innerText = 'Excluir'
         li.insertAdjacentElement('afterend' ,btnDelete);
 
