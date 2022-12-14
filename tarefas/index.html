@@ -1,59 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
-
-    <title>Lista de tarefas</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Avançado</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/scripts.js" defer></script>
+    <script src="js/watch.js" defer></script>
   </head>
   <body>
-
-    <h1 class="text-center text-white mt-5">Lista de Tarefas</h1>
-    <p class="hours text-center text-white">00:00:00</p>
-
-    <section class="container"> <!--Início seção adicionar tarefa-->
-        <div class="row">
-            <div class="col-md-6 ml-auto mr-auto mt-5">
-                <label class="text-white">Adicionar Tarefa:</label>
-                <input class="inputTasks form-control" type="text">
-                <button class="add btn btn-primary form-control mt-3">Adicionar</button>
-            </div>
+    <div>
+      <h3 class="hours">00:00:00</h3>
+    </div>
+    <div class="todo-container">
+      <header>
+        <h1>Tarefas</h1>
+      </header>
+      <form id="todo-form">
+        <p>Adicione sua tarefa</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="O que você vai fazer?"
+          />
+          <button type="submit">
+            <i class="fa-thin fa-plus"></i>
+          </button>
         </div>
-    </section> <!--Fim seção adicionar tarefa-->
-
-
-    <section class="container mt-5"> <!--Início seção tarefa adicionada-->
-        <div class="row text-white">
-            <div class="col-md-6 m-auto">
-                <ul class="tasks">
-                    <h2>Novas Tarefas</h2>
-                </ul>
-            </div>
+      </form>
+      <form id="edit-form" class="hide">
+        <p>Edite sua tarefa</p>
+        <div class="form-control">
+          <input type="text" id="edit-input" />
+          <button type="submit">
+            <i class="fa-solid fa-check-double"></i>
+          </button>
         </div>
-    </section> <!--Fim seção tarefa adicionada-->
-
-    <footer class="text-center">
-        <a href="https://github.com/DavidBarbosa425/listaDeTarefas"><i class="fab fa-github fa-3x"></i></a>
-        <h3 class="text-primary">Código no GitHub</h3>
-    </footer>
-
-    <script src="assts/JS/relogio.js"></script>
-    <script src="assets/JS/tarefa.js"></script>
-
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <button id="cancel-edit-btn">Cancelar</button>
+      </form>
+      <div id="toolbar">
+        <div id="search">
+          <h4>Pesquisar:</h4>
+          <form>
+            <input type="text" id="search-input" placeholder="Buscar..." />
+            <button id="erase-button">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </form>
+        </div>
+        <div id="filter">
+          <h4>Filtrar:</h4>
+          <select id="filter-select">
+            <option value="all">Todos</option>
+            <option value="done">Feitos</option>
+            <option value="todo">A fazer</option>
+          </select>
+        </div>
+      </div>
+      <div id="todo-list">
+        <!-- 
+          Template
+          
+          <div class="todo">
+          <h3>Estou fazendo algo aqui...</h3>
+          <button class="finish-todo">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="edit-todo">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+          <button class="remove-todo">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div> -->
+      </div>
+    </div>
   </body>
 </html>
